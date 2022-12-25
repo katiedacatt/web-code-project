@@ -1,4 +1,47 @@
-html, body {
-  height: 100%;
-  width: 100%;
+
+.overall-container {
+--col1: #faedcd;
+--col2: #e9edc9;
+--darker: #d4a373;
+--lightest: #fefae0;
+--bg:#ccd5ae  ;
 }
+.main-container {
+background-color: var(--bg);
+background-image:
+background-size: 54px 54px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--darker) ;
+  overflow: hidden;
+ }
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: var(--lightest);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--col1);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--bg);
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+ /* the search thingy */
+ .topnav input[type=text] {
+   font-size: 20px;
+    border: 1px solid var(--bg);  
+  }
